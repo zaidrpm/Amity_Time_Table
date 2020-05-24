@@ -1,0 +1,16 @@
+{
+
+  "manifest_version": 2,
+  "name": "Ami-Schedule",
+  "version": "1.0",
+
+  "description": "Scraps time table from amizone and puts on server",
+
+  "content_scripts": [
+    {
+      "matches": ["*://student.amizone.net/Home"],
+      "js": ["scrape.js"]
+    }
+  ]
+
+}
